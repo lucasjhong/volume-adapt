@@ -1,0 +1,31 @@
+{
+	"manifest_version": 2,
+	"name": "Volume Adapt",
+	"version": "1.0.0",
+	"description": "Adjusts volume of of different audios and videos with data combined from other user's inputs",
+	"permissions": ["tabs", "tabCapture", "activeTab"],
+	"background": {
+		"scripts": ["static/js/background.js"],
+		"matches": ["<all_urls>"],
+		"persisent": false
+	},
+	"content_scripts": [
+		{
+			"js": ["static/js/content.js"],
+			"matches": ["<all_urls>"]
+		}
+	],
+	"icons": {
+		"192": "icon.png"
+	},
+	"browser_action": {
+		"default_icon": {
+			"192": "icon.png"
+		},
+		"default_title": "Volume Adapt",
+		"default_popup": "popup.html"
+	},
+	"options_ui": {
+		"page": "options.html"
+	}
+}

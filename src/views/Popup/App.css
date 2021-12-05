@@ -1,0 +1,79 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Quicksand', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+.App {
+	text-align: center;
+}
+
+.App-header {
+	padding: 16px;
+	background-color: #1b262c;
+	min-height: 60vh;
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: #f1f6f9;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.volume-control {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	margin-bottom: 12px;
+}
+
+.audible-list {
+	margin-top: 24px;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+}
+
+.audible-item {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	cursor: pointer;
+	padding-left: 6px;
+	border-radius: 6px;
+}
+
+.audible-item:hover {
+	background-color: rgba(240, 240, 240, 0.7);
+}
+
+.audible-item img {
+	height: 28px;
+	width: 28px;
+	margin-right: 12px;
+}
+
+.audible-item p {
+	font-size: 12px;
+}
