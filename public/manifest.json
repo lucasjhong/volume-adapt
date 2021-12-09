@@ -2,8 +2,8 @@
 	"manifest_version": 2,
 	"name": "Volume Adapt",
 	"version": "1.0.0",
-	"description": "Adjusts volume of of different audios and videos with data combined from other user's inputs",
-	"permissions": ["tabs", "tabCapture", "activeTab"],
+	"description": "Allows volume adjustment of individual tabs, suggests ideal volume for videos based on data from other user's inputs",
+	"permissions": ["tabs", "tabCapture"],
 	"background": {
 		"scripts": ["static/js/background.js"],
 		"matches": ["<all_urls>"],
