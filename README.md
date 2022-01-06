@@ -8,7 +8,7 @@ an optimal volume for videos, by submitting their volume to the
 database, which is then used to suggest an appropriate volume for
 videos upon opening a new one.
 
-Chrome Extension\
+##Chrome Extension
 [Download here](https://chrome.google.com/webstore/detail/volume-adapt/dicnjoljhecfbjjndjeiepcdefelncmj)
 
 ## Preview
