@@ -24,7 +24,7 @@ The extension works on per-tab basis, and will only start working once you activ
 ### Retrieving volume
 
 Once the extension has been activated, the extension will retrieve the average volume from the database and set the default slider to said volume upon opening a new Youtube video.\
-The preset volume will have a grey mark on the slider, and if there isn't one available, the slider will simply default to 100%\
+The preset volume will have a grey mark on the slider, and if there isn't one available, the slider will simply default to 100%
 
 ### Submitting volume
 
