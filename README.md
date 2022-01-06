@@ -1,60 +1,31 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Volume Adapt
 
-## Available Scripts
+Chrome extension that allows the user to adjust the voume of
+different tabs individually, as well as navigate through different
+tabs playing audio.\
+Users are able to contribute to crowd-sourcing
+an optimal volume for videos, by submitting their volume to the
+database, which is then used to suggest an appropriate volume for
+videos upon opening a new one.\
 
-In the project directory, you can run:
+Chrome Extension\
+[Download here](https://chrome.google.com/webstore/detail/volume-adapt/dicnjoljhecfbjjndjeiepcdefelncmj)
 
-### `yarn test`
+## Preview
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![preview](/src/image/volume-adapt-preview.gif)
 
-### `yarn build`
+## How to use
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![preview](/src/image/image1.png)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+The extension works on per-tab basis, and will only start working once you activate the extension by clicking on it. After that, you can browse with the extension running in the background.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Retrieving volume
 
-### `yarn eject`
+Once the extension has been activated, the extension will retrieve the average volume from the database and set the default slider to said volume upon opening a new Youtube video.\
+The preset volume will have a grey mark on the slider, and if there isn't one available, the slider will simply default to 100%\
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Submitting volume
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+You can submit what you think an ideal volume is for the video, by adjusting it yourself using the slider, and pressing the submit button. The data is then sent to the backend for it to be combined with the existing data, if there is one.
